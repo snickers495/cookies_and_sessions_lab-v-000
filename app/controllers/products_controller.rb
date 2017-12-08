@@ -1,10 +1,11 @@
 class ProductsController < ApplicationController
 
   def index
-    @products = session[:cart]
+    @products = cart
   end
 
   def add
-  end 
+    cart << params[:product]
+  end
 
 end

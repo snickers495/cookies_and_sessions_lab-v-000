@@ -54,5 +54,5 @@ Rails.application.routes.draw do
   #     resources :products
   #   end
   get "/", to: "products#index", as: "homepage"
-  post "/" to: "application#cart"
+  post "/add" to: "application#cart"
 end
